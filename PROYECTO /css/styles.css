@@ -1,14 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 115px;
+    font-size: 1.2rem;
+    text-shadow: #333;
+    color: white;
+    font-style: normal;
+}
+html.hydrated {
+    background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+    color: #eee;
+    width: 100%;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animation 100s linear infinite;
 }
 
+@keyframes animation {
+    100%{
+     background-position:0px -3000px;
+   }
+ }
+
 header {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 1em;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(13.3px);
+    -webkit-backdrop-filter: blur(13.3px);
 }
 
 main {
@@ -16,11 +37,22 @@ main {
     justify-content: space-around;
     padding: 1em;
 }
+h1{
+    text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.5); 
 
+}
+h2{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
 section {
-    border: 1px solid #ccc;
-    padding: 1em;
+    padding: 10px;
+    margin: 1rem;
     width: 30%;
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(2.3px);
 }
 
 form {
